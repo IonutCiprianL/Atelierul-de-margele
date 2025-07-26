@@ -137,7 +137,15 @@
       color: #555;
     } 
 
-      form input, form select, form textarea {
+     form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    } 
+
+    form input, form select, form textarea {
       padding: 10px;
       border-radius: 5px;
       border: 1px solid #ccc;
@@ -149,6 +157,15 @@
     form textarea {
       resize: vertical;
       min-height: 80px;
+    } 
+
+    .article {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    } 
+
+    .article:last-child {
+      border-bottom: none;
     } 
 
   
